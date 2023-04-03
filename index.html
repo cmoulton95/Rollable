@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rollable</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="info">
+        <h2>Attack Roll</h2>
+        <form
+          action="/script.js"
+          id="attackformula"
+          target="_self"
+          onsubmit="attackRoll()"
+          method="dialog"
+        >
+          <label for="atmod">What is the attack modifier? </label>
+          <input type="text" name="atmod" id="atmod" /><br />
+          <label for="attype">What type of attack is this? </label>
+          <input type="text" name="attype" id="attype" class="longform" /><br />
+          <input
+            type="submit"
+            name="submit"
+            id="submit"
+            value="Submit"
+            onclick="c2c()"
+          />
+          <label for="submit" id="copied">Copied to Clipboard</label>
+        </form>
+        <p id="retattack"></p>
+      </div>
+      <div class="info2">
+        <h2>Damage Roll</h2>
+        <form
+          action="/script.js"
+          id="damageformula"
+          target="_self"
+          onsubmit="damageroll()"
+          method="dialog"
+        >
+          <label for="dinum">How many dice for the damage?</label>
+          <input type="text" name="dinum" id="dinum" /><br />
+          <label for="ditype">What dice is used for damage?</label>
+          <select name="ditype" id="ditype">
+            <option value="4">d4</option>
+            <option value="6">d6</option>
+            <option value="8">d8</option>
+            <option value="10">d10</option>
+            <option value="12">d12</option></select
+          ><br />
+          <label for="damod">What is the damage modifier?</label>
+          <input type="text" name="damod" id="damod" /><br />
+          <label for="attype">What type of attack was this?</label>
+          <input
+            type="text"
+            name="attype"
+            id="attype"
+            placeholder="Sword/Punch/Crossbow"
+            class="longform"
+          /><br />
+          <label for="damtype">What type of damage does this do?</label>
+          <input
+            type="text"
+            name="damtype"
+            id="damtype"
+            class="longform"
+            placeholder="Peircing/Slashing/Fire"
+          /><br />
+          <input
+            type="submit"
+            name="submit"
+            id="submit"
+            value="Submit"
+            onclick="c2c()"
+          />
+          <label for="submit" id="copied2">Copied to Clipboard</label>
+        </form>
+        <p id="retdamage"></p>
+      </div>
+    </div>
+  </body>
+  
+</html>

@@ -1,0 +1,128 @@
+@font-face {
+  font-family: Vecna;
+  src: url(Vecna-oppx.ttf) format("truetype");
+}
+@font-face {
+  font-family: Vecnab;
+  src: url(VecnaBold-4YY4.ttf) format("truetype");
+}
+
+body{
+    background-image: url(https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-size: cover;
+}
+
+label {
+  font-size: 18pt;
+  margin-left: 50px;
+  font-family: Vecnab;
+  text-shadow: 5px 5px 5px rgb(78, 78, 78);
+}
+input {
+  width: 60px;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgb(78, 78, 78);
+}
+
+h2 {
+  margin-left: 40px;
+  padding-top: 15px;
+  font-family: Vecna;
+  text-shadow: 5px 5px 5px rgb(78, 78, 78);
+}
+#wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  }
+  #parchment {
+  position: absolute;
+  display: flex;
+    width: 75%;
+  min-height: calc((1vw + 1vh) * 75);
+  /* center page with absolute position */
+  top: 0%; left: 50%; transform: translate(-50%, 0);
+  margin: 2em 0;
+    padding: 4em;
+    box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
+    background: #fffef0;
+  filter: url(#wavy2);
+}
+.info {
+  width: 100%;
+  margin-left: 50px;
+  /*background-color: gray; */
+  border-style: double;
+  margin-bottom: 20px;
+  background-image: url(https://www.myfreetextures.com/wp-content/uploads/2013/07/old-brown-vintage-parchment-paper-texture-900x1226.jpg?ezimgfmt=ng%3Awebp%2Fngcb1%2Frs%3Adevice%2Frscb1-1);
+  background-size: auto;
+  font-family: Vecna;
+}
+.info2 {
+  width: 100%;
+  margin-left: 50px;
+  background-image: url(https://www.myfreetextures.com/wp-content/uploads/2013/07/old-brown-vintage-parchment-paper-texture-900x1226.jpg?ezimgfmt=ng%3Awebp%2Fngcb1%2Frs%3Adevice%2Frscb1-1);
+  background-size: auto;
+  border-style: double;
+  font-family: Vecna;
+}
+#submit {
+  width: 75px;
+  box-shadow: 5px 5px 5px rgb(78, 78, 78);
+}
+
+.longform {
+  width: 130px;
+}
+
+#copied {
+  font-size: 12pt;
+  margin-left: 0px;
+  opacity: 0;
+}
+#copied2 {
+  font-size: 12pt;
+  margin-left: 0px;
+  opacity: 0;
+}
+.animate {
+  animation-name: copyhere;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+@keyframes copyhere {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#ditype {
+  font-size: 18pt;
+  margin-left: 15px;
+  box-shadow: 5px 5px 5px rgb(78, 78, 78);
+}
+#retattack {
+  background-color: white;
+  border-radius: 5px;
+  width: 80%;
+  height: 35px;
+  margin: 15px;
+  margin-right: 0px;
+  padding: 10px;
+  box-shadow: 5px 5px 5px rgb(78, 78, 78);
+}
+#retdamage {
+  background-color: white;
+  border-radius: 5px;
+  width: 80%;
+  height: 35px;
+  margin: 15px;
+  margin-right: 0px;
+  padding: 10px;
+  box-shadow: 5px 5px 5px rgb(78, 78, 78);
+}
